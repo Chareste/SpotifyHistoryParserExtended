@@ -1,7 +1,8 @@
 
 # Spotify History EXtended Parser
 A parser for the Extended Streaming History (all time) sent to you by Spotify [after requesting it there](https://www.spotify.com/us/account/privacy/).  
-They are elaborated through the Spotify API so it requires internet connection to function.
+They are elaborated through the Spotify API so it requires internet connection to function.  
+Find the last year's parser [here](https://github.com/Chareste/SpotifyHistoryParser)
 
 ## Getting started
 
@@ -59,7 +60,7 @@ Then set the *lastvalue* option in the settings file to 0 and you're good to go.
 
 ## Output
 
-The program will return you two main JSON files, *tracks.json*, *shows.json*, *additionalInfo.json* and *discarded.json*.  
+The program will return you four main JSON files, *tracks.json*, *shows.json*, *additionalInfo.json* and *discarded.json*.  
 
 ### tracks.json
 
