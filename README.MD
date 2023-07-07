@@ -129,7 +129,7 @@ There is also an array containing indexes with no data. I am investigating why t
 
 
 It contains the [JSON directly from the StreamingHistory file]
-(https://support.spotify.com/us/article/understanding-my-data/#:~:text=What%27s%20included-,Extended%20Streaming%20History,-(audio%2C%20video%2C%20and), 
+(https://support.spotify.com/us/article/understanding-my-data/#:~:text=What%27s%20included-,Extended%20Streaming%20History), 
 indexed by the position in the (concatenation of) file(s). 
 #### Structure 
 ```
