@@ -1,6 +1,6 @@
 #
- # This file is part of the XXX distribution (https://github.com/xxxx or http://xxx.github.io).
- # Copyright (c) 2015 Liviu Ionescu.
+ # This file is part of the SpotifyParserExtended distribution (https://github.com/chareste/SpotifyParserExtended).
+ # Copyright (c) 2023 Chareste.
  #
  # This program is free software: you can redistribute it and/or modify
  # it under the terms of the GNU General Public License as published by
@@ -153,9 +153,10 @@ for i, val in enumerate(filemap):
                 trackID = track_cache[index]
                 msDuration = tr["duration_ms"]
                 if trackID not in trackdatini:
+                    #print(tr['artists'])
                     trackdatini[trackID]={"Artist": tr['artists'][0]['name'],"ArtistID": tr['artists'][0]['id'],
                                           "Title": tr["name"], "msDuration": msDuration,"TimesPlayed": 0, "msPlayed": 0,
-                                          "timeDistribution": [0]*8,"Popularity": tr['popularity']}
+                                          "timxeDistribution": [0]*8,"Popularity": tr['popularity']}
                 trackdatini[trackID]["TimesPlayed"] += 1 \
                                                         if tr_cache_ids[index]['ms_played'] > msDuration/3 else 0
                 trackdatini[trackID]["msPlayed"] += tr_cache_ids[index]['ms_played']
